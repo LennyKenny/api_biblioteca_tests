@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+// Se debe agregar esto para poder usar las variables de .env
+require('dotenv').config()
+
 mongoose.connect(process.env.MONGO_DB, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
